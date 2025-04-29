@@ -1,0 +1,48 @@
+setup:
+   1. download and Install visual studio code
+   2. Install extension "material Icon Theme" and make sure auto save is checked in file
+   Package managers helps to install/uninstall/update packages in system (eg: npm and yarn)
+   3. Download and install nodeJS(it brings npm - node package manager into system)
+   4. goto website https://nodejs.org/en/download
+   5. download windows installer(.msi)
+   6. select npm package manager and next until install.
+   7. To verify whether installed correctly or not, use "npm -v" in command prompt
+   8. Install Angular: goto cmd and type "npm install -g @angular/cli"
+   9. To verify angular installation, type in cmd "ng v"
+   10. To update node/npm use command, 
+   "npm install -g npm@latest"/"npm update npm@11.2.0"
+
+   Angular:
+   ----------
+   1. what is Angular?
+   Angular is a Framework of JS. Framework means complete developer Environment. Angular is developed by Google. it Provides End to End solution. Angular is used to create single page applications and progressive web apps.
+
+   2. what is the difference between React and Angular?
+   React is library of JS. Angular is a framework of JS
+   React is developed by Meta and Angular is developed by Google
+   React Provides single way communication and Angular Provides two way communication
+   React is mostly customised format and Angular is mostly structured format
+
+   3. what is the difference between Angular and Angular JS?
+   Angular JS used Javascript but Due to dynamic Data typing it creates lot of Bugs, To solve them Google collaborated with Microsoft and uses
+   Typescript in Angular 2, which is also called Angular or Angular+
+
+   --> Angular Follows scaffolding technique(we use command for any operation such as creating , deleting etc.., )
+
+  First Angular Application:
+      1. Goto Terminal --> new Terminal --> command Prompt
+      2. cd folder-name
+      3. type the command : ng new appName --standalone=false
+      4. select css and enter n
+      5. cd appName
+      6. ng serve -o
+
+
+
+
+
+
+
+
+
+
