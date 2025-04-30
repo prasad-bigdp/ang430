@@ -1,0 +1,38 @@
+//Day 2:
+Folder structure:
+By Default Angular App contains some folders and files as below:
+  tsconfig.spec.json --> tsconfig files are used to set rules for TSC(Typescript compiler). Testing for those rules are under tsconfig.spec.json
+  tsconfig.json --> used to set rules for whole applications
+  tsconfig.app.json --> used to rules for only one application
+  readme.md --> it is an instruction file, used to instruct users
+  package.json --> it contains the meta of application such as app name, author name, version, scripts, packages 
+  package-lock.json --> it contains in detailed meta data about  package.json and all the packages installed in node modules
+  angular.json --> it contains the settings and actual starting point of angular application
+  .gitignore --> it contains list of files and folder which git will ignore
+  .editorconfig --> it combines code for different editors
+  node_modules --> it contains all the packages which are installed.
+  public --> it contains files/folders which are accessible directly.
+  src  --> This is where your actual code
+
+  initially angular get bootstrapped in browser (converting static DOM into Dynamic DOM)
+   index.html --> it is the main HTML page that gets loaded from angular.json. it contain 
+   <app-root></app-root>
+   main.ts --> it is the main ts page that gets loaded from angular.json and it will bootstrapped the browser
+   style.css --> it is the main css file used for global styles
+
+Angular divides User Interface into small reusable blocks called components
+These components will load in the application and they are reusable.
+   App folder contains files such as
+   app.component.html  --> it contains view of app component
+   app.component.css --> it contains styling of app component
+   app.component.ts --> it contains logic of app component (such as selector, html file name, css file name etc..,)
+   app.component.spec.ts --> it contains testing code app component
+   app.module.ts --> all components,services are controlled by module
+   app-routing.module.ts --> it contains routing logic of application
+
+
+
+
+
+
+
