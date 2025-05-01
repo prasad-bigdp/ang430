@@ -1,0 +1,23 @@
+Data Binding:
+    Every Component In Angular contains 4 files
+    component-name.component.html : it is used for the view of component and it is also called Template files
+    component-name.component.css : it is used for the style/design of the component and it is also called style file.
+    component-name.component.ts : it is used for logic of the component and it is also called component file
+    component-name.component.spec.ts : These specification files are used for unit testing and also called as Testing files
+    
+    Data Binding Deals with the communication between Template file(html) and component files(ts). They are two types of Data Binding
+    i. one way Data Binding: There are different ways where data passes one way between HTML and TS file
+       a. Typescript to HTML(component to template):
+       string Interpolation: it is used to send data from component file to template file. it will keep the dynamic values/expression within double braces {{}}
+
+          //html
+          <p>welcome to {{course}} course</p>
+          //TS
+           course="angular"
+        property Binding: it is used to get the dat from component file to template file but unlike string Interpolation, it will not convert every data as a string
+         In property Binding, we use square brackets for properties
+       b. HTML to Typescript(Template to component):
+         Templates can send data/trigger a function using event binding.
+         Here events are binded using the parenthesis
+         
+ 

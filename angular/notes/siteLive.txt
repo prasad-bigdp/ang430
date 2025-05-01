@@ -1,0 +1,14 @@
+To make site live we have so many ways, we are using netlify
+
+i. Go terminal , goto application folder 
+ii. tyep "ng build", it will give dist folder , inside which you will have "browser" folder
+iii. Goto netlify.com , signup /login , In home page, you can see " add a new site"
+iv. Inside Add a new site, you can see an option "deploy manually"
+v. upload Browser folder and it will automatically give you the link
+vi. you can change the link in site configuration --> change site name
+
+
+
+
+
+
