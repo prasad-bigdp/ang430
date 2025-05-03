@@ -1,0 +1,43 @@
+.generator{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.inputs{
+ display: flex;
+ gap: 10px;
+}
+input{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 1s ease;
+}
+button:hover{
+    background-color: orange;
+    color: white;
+}
+.card{
+    display: flex;
+    padding: 20px;
+    
+    flex-direction: column;
+    box-shadow: 5px 10px 45px white;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+

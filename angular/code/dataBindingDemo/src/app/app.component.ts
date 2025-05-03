@@ -10,6 +10,7 @@ export class AppComponent {
   isDisable = false;
   count = 0;
   n = 'PRASAD';
+  na = '';
   a = 10;
   b = 20;
   imgUrl:string =

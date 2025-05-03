@@ -19,5 +19,19 @@ Data Binding:
        b. HTML to Typescript(Template to component):
          Templates can send data/trigger a function using event binding.
          Here events are binded using the parenthesis
-         
+         <button (click)="fun()">click me</button>
+
+   ii. Two way Data Binding:
+       It is used to send data from Template to component and Receive Data from component to Template At a time. It is possible using a directive "ngModel"
+       ngModel will come along with formsModule, so we need to import formsModule into 
+       module file
+       //html
+       <input type="text" [(ngModel)]="n" />
+
+       //ts
+       n:string = '';
+
+
+
+
  
