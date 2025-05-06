@@ -1,0 +1,26 @@
+<h1 class=" text-center">Movie Generator</h1>
+<div class=" d-flex justify-content-center flex-column align-items-center gap-3">
+  <input type="text" placeholder="Enter movie name" [(ngModel)]="mname">
+  <input type="text" placeholder="Enter movie Url" [(ngModel)]="murl">
+  <button (click)="submitData()">submit</button>
+</div>
+<div class=" container">
+   <div class=" row">
+  <div class=" col p-4 rounded-2 border-2 border-black">
+  <img [src]="movies[0].url" alt="movies[0].Title" height="200">
+  <h2>{{movies[0].Title}}</h2>
+   <button (click)="show(0)">show</button>
+   <div *ngIf="movies[0].isSummaryShow">
+    {{movies[0].summary}}
+   </div>
+</div>
+<div class=" col p-4 rounded-2 border-2 border-black">
+  <img [src]="movies[1].url" alt="movies[1].Title" height="200">
+ <h2>{{movies[1].Title}}</h2>
+    <button (click)="show(1)">show</button>
+     <div *ngIf="movies[1].isSummaryShow">
+    {{movies[1].summary}}
+   </div>
+</div>
+</div>
+</div>
