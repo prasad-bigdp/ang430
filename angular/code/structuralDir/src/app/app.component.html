@@ -1,0 +1,23 @@
+<!-- <div *ngIf="isPrasad">
+  <div *ngIf="isGood">
+    <h1>Hello Prasad, you are Good</h1>
+  </div>
+</div> -->
+<div *ngIf="isTeacher else stud">
+   <h1>Hello Teacher</h1>
+</div>
+<ng-template #stud *ngIf="isStudent else parent">
+<h1>Hello Student</h1>
+</ng-template>
+<ng-template #parent>
+  <h1>Hello Parent</h1>
+</ng-template>
+
+
+<div *ngIf="isPrasad else bujji">
+  <h1>Hello Prasad, you are Good</h1>
+</div>
+<ng-template #bujji>
+  <h2>Hello stranger</h2>
+</ng-template>
+<button (click)="change()">click me</button>

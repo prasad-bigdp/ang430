@@ -1,0 +1,25 @@
+Directives:
+Directives are used to manipulate the DOM. There are three types of Directives in angular such as
+   i. control Directives (or) conditional Directives:
+        These directives are used to control the flow of angular using the condition. Based on Condition, it will change the flow of execution
+        eg: ngIf,ngSwitch,ngFor
+    ii. property Directives : These Directives are used to manipulate the attribute such as style of class of an element
+         eg: ngClass,ngStyle
+    iii. custom Directives : These directives are created by developer using ng generate commands
+
+
+i. control Directives:
+   a. ngIf : ngIf is a structural or control directive which is used to show or hide different elements based on the condition
+     simple ngIf:
+     <element *ngIf="condition">
+           //statements
+     </element>
+
+
+
+
+
+
+
+
+
