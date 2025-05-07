@@ -15,6 +15,31 @@ i. control Directives:
            //statements
      </element>
 
+    b. ngSwitch : ngSwitch is used to check a value between multiple options. you can use it as a substitute of "if-else-if"
+     <div [ngSwitch]="day">
+         <p *ngSwitchCase="0">Monday</p>
+         <p *ngSwitchCase="1">Tuesday</p>
+         <p *ngSwitchCase="2">Wednesday</p>
+         <p *ngSwitchCase="3">Thursday</p>
+         <p *ngSwitchCase="4">Friday</p>
+         <p *ngSwitchCase="5">saturday</p>
+         <p *ngSwitchCase="6">Sunday</p>
+         <p *ngDefaultCase>Please enter values between 0-6</p>
+     </div>
+
+     //ts
+     day=5;
+  c. ngFor:
+      ngFor is used to iterate certain statements until the array is ended
+      <div *ngFor="let f of flowers;let i=index">
+         <h1>{{f.name}},{{i}}</h1>
+         <p>{{f.color}}</p>
+      </div>
+      //ts
+      flowers = [{name:"rose",color:"red"},{name:"lilly",color:"white"}]
+
+
+
 
 
 

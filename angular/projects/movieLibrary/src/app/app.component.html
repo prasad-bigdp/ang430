@@ -1,0 +1,8 @@
+<h1 class=" text-5xl text-center py-5 text-blue-600">Movie Library</h1>
+<div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-auto max-w-5xl">
+   <div *ngFor="let m of movies" class=" p-5 border shadow shadow-amber-300 rounded-2xl hover:scale-105 transition-all">
+   <img [src]="m.image" [alt]="m.title" height="200">
+   <h2>{{m.title}}</h2>
+   <p>Released: {{m.year}}</p>
+ </div>
+</div>

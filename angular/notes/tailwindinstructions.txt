@@ -1,0 +1,9 @@
+1. goto terminal, specific folder "npm install tailwindcss @tailwindcss/postcss postcss "
+2. goto style.css in src and write "@import "tailwindcss";
+3. Above .editorconfig create one file and name as
+.postcssrc.json
+{
+    "plugins": {
+        "@tailwindcss/postcss": { }
+    }
+}

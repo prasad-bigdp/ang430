@@ -1,0 +1,12 @@
+JS Basics
+Typescript
+Angular Intro
+Folder structure
+Data binding(
+    one way - string interpolation,
+              property binding,
+              event binding
+    two way - ngModel
+)
+Directives
+   --structural Directives (ngIf)
