@@ -1,0 +1,7 @@
+PIPES:
+  pipe is used to transform the data, There are two types of PIPES
+  Default pipes and custom pipes
+  1. Default Pipes: 
+    angular provides some default pipes such as
+    i. uppercase : it is used to transform the data into uppercase
+    ii. lowercase : it is used to transform the data into lowercase

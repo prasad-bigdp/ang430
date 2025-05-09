@@ -1,0 +1,15 @@
+<header class=" bg-blue-500 text-white text-3xl text-center py-5">
+  <h2 class=" animate-bounce">My Anime List</h2>
+  <button (click)="change()" class=" bg-white p-3 text-black rounded-2xl">{{isDark?'light mode':'dark mode'}}</button>
+</header>
+<main [ngClass]="isDark?'dark':'light'" class=" max-w-5xl m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-5">
+   <div *ngFor="let a of animes" class=" p-4 rounded flex flex-col shadow shadow-blue-500 hover:scale-105 transition-all gap-2 justify-center items-center">
+      <img [src]="a.poster" [alt]="a.title" class=" h-3/4">
+      <h2 class=" font-bold text-2xl">{{a.title|uppercase}}</h2>
+      <p class=" text-xl">Year: {{a.year}}</p>
+      <ul class=" flex gap-2">
+          <li *ngFor="let g of a.genres" class=" bg-blue-200 p-2 rounded-2xl  font-bold text-center">{{g}}</li>
+      </ul>
+      <p class=" text-xl">Rating: <span [ngStyle]="{color:(a.rating>8)?'Green':'red'}">{{a.rating}}/10</span></p>
+   </div>
+</main>

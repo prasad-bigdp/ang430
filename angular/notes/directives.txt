@@ -38,7 +38,19 @@ i. control Directives:
       //ts
       flowers = [{name:"rose",color:"red"},{name:"lilly",color:"white"}]
 
+ii. property Directives: These directives are used to manipulate the properties of elements such as ngClass and ngStyle
 
+  ngClass : we can set a class name to an element based on a condition so that its DOM can be manipulated
+  html
+  <p [ngClass]='isGood?'dark':'light'>hello world</p>
+  //ts
+  isGood=false
+
+  ngStyle : we can set a style value to an element based on a condition so that its Dom values can be manipulated
+  html
+  <p [ngStyle]="backgroundColor:isRed?'red':'blue'">hello world</p>
+  //ts
+  isRed= false
 
 
 

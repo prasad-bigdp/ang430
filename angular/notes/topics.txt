@@ -9,4 +9,7 @@ Data binding(
     two way - ngModel
 )
 Directives
-   --structural Directives (ngIf)
+   --structural Directives (ngIf,ngSwitch,ngFor)
+   -- property Directives
+   -- custom Directives
+Pipes
