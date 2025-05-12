@@ -5,3 +5,19 @@ PIPES:
     angular provides some default pipes such as
     i. uppercase : it is used to transform the data into uppercase
     ii. lowercase : it is used to transform the data into lowercase
+    iii. decimal pipe :  it is used to reprent decimals
+    25.1436|number:'2.1-3
+    number | nmber : ' min value.minDigits Value - maximum value, 
+    iv. percent pipe : it is used to represent percentage. 
+     25 | percent ==>25%
+    v. JSON: it is used to transform givn data of an object into JSON.
+    vi. date: it is used to transform the given data into certail date , here MM- month, hh- hours,ss-seconds,mm-minutes etc..,
+    vii. currency : it is used to transform givrn data into several currency
+    viii. slice: it is to return new array or string
+    value | slice:starting index : ending index. Ending index is not included
+
+    custom pipes:
+    we can create any pipe using "ng generate pipe pipe-name"
+
+    it create pipe-name.pipe.ts and piprename.pipe.spec.ts (testing file)
+    pipe contains PipeTransform mrthod

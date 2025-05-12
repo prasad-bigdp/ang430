@@ -10,6 +10,6 @@ Data binding(
 )
 Directives
    --structural Directives (ngIf,ngSwitch,ngFor)
-   -- property Directives
+   -- property Directives  (ngClass, ngStyle)
    -- custom Directives
-Pipes
+Pipes 
