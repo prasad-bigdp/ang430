@@ -15,6 +15,7 @@ export class AppComponent {
       year: 1999,
       genres: ['Action'],
       rating: 9,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg',
     },
@@ -24,6 +25,7 @@ export class AppComponent {
       year: 2002,
       genres: ['Adventure'],
       rating: 8.4,
+      isRating: false,
       poster:
         'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaP7aoBA63ypGcSZOn0tNipxn7S-WXs2ZSwGgTvbGy8Tvwg9Yc1ESLTSpaU3u3eK21VW9y',
     },
@@ -33,6 +35,7 @@ export class AppComponent {
       year: 2019,
       genres: ['Action', 'Adventure'],
       rating: 8.6,
+      isRating: false,
       poster:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx4WiTvCIjnfkQSzU07H2epdXwuTMq_FMW-A&s',
     },
@@ -42,6 +45,7 @@ export class AppComponent {
       year: 2006,
       genres: ['Crime', 'Drama', 'Action'],
       rating: 8.9,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
     },
@@ -51,6 +55,7 @@ export class AppComponent {
       year: 1997,
       genres: ['Action', 'Adventure'],
       rating: 7.6,
+      isRating: false,
       poster:
         'https://upload.wikimedia.org/wikipedia/en/2/27/Pokemonseason1DVDBoxSet.jpg',
     },
@@ -60,6 +65,7 @@ export class AppComponent {
       year: 1986,
       genres: ['Adventure'],
       rating: 8.8,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/M/MV5BN2VlNTdlMzQtYzE5OC00YmYwLTgyZTItYjEzMWY0ZDNjMTJhXkEyXkFqcGc@._V1_.jpg',
     },
@@ -69,6 +75,7 @@ export class AppComponent {
       year: 2024,
       genres: ['Action', 'Sci-Fi'],
       rating: 8.7,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/I/81-PLxbqw0L._AC_UF1000,1000_QL80_.jpg',
     },
@@ -78,6 +85,7 @@ export class AppComponent {
       year: 2013,
       genres: ['Action'],
       rating: 9.1,
+      isRating: false,
       poster: 'https://images.justwatch.com/poster/100348362/s718/season-1.jpg',
     },
     {
@@ -86,6 +94,7 @@ export class AppComponent {
       year: 2019,
       genres: ['Adventure'],
       rating: 8.6,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/M/MV5BNDA3MGNmZTEtMzFiMy00ZmViLThhNmQtMjQ4ZDc5MDEyN2U1XkEyXkFqcGc@._V1_.jpg',
     },
@@ -95,6 +104,7 @@ export class AppComponent {
       year: 2022,
       genres: ['Dark Fantasy'],
       rating: 8.6,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/I/71fJJQq2E4L._AC_UF1000,1000_QL80_.jpg',
     },
@@ -104,6 +114,7 @@ export class AppComponent {
       year: 2019,
       genres: ['Action', 'Adventure', 'Comedy'],
       rating: 7.4,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/M/MV5BM2MwZDRmYWItNGIzZC00ZWExLWEwNWYtNmM1ZmU3OTA3NmY4XkEyXkFqcGc@._V1_.jpg',
     },
@@ -113,6 +124,7 @@ export class AppComponent {
       year: 2004,
       genres: ['Adventure'],
       rating: 8.5,
+      isRating: false,
       poster:
         'https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Bleachanime.png/250px-Bleachanime.png',
     },
@@ -122,6 +134,7 @@ export class AppComponent {
       year: 2014,
       genres: ['Drama', 'Mystery', 'Romance'],
       rating: 8.5,
+      isRating: false,
       poster:
         'https://upload.wikimedia.org/wikipedia/en/d/de/Your_Lie_in_April_Manga_cover.png',
     },
@@ -131,6 +144,7 @@ export class AppComponent {
       year: 2020,
       genres: ['Drama', 'Action'],
       rating: 8.5,
+      isRating: false,
       poster:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAfnJ1SBDxBXdjuj9CAK06Ez8ieNyD3PVgmA&s',
     },
@@ -138,6 +152,7 @@ export class AppComponent {
       id: 15,
       title: 'Black Clover',
       year: 2017,
+      isRating: false,
       genres: ['Animation', 'Adventure', 'Fantasy'],
       rating: 8.5,
       poster:
@@ -149,6 +164,7 @@ export class AppComponent {
       year: 2019,
       genres: ['Drama', 'Thriller'],
       rating: 8.5,
+      isRating: false,
       poster:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKrCOv1e_DdG2pATY9scwpQ8HiyZnWSggzA&s',
     },
@@ -158,6 +174,7 @@ export class AppComponent {
       year: 2022,
       genres: ['Sport', 'Drama', 'Thriller'],
       rating: 8.4,
+      isRating: false,
       poster:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqD8SmKVSQN-p4D28bdmvQ3-Zx0X53sA6anQ&s',
     },
@@ -167,6 +184,7 @@ export class AppComponent {
       year: 2001,
       genres: ['Animation', 'Adventure', 'Family'],
       rating: 8.6,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg',
     },
@@ -176,6 +194,7 @@ export class AppComponent {
       year: 2023,
       genres: ['Horror', 'Adventure'],
       rating: 8.6,
+      isRating: false,
       poster:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS69BNlaGjCy6SpSP96S8Ywu7ZPqKAVmreXxA&s',
     },
@@ -185,6 +204,7 @@ export class AppComponent {
       year: 2022,
       genres: ['Romance', 'Drama', 'Fantasy'],
       rating: 7.6,
+      isRating: false,
       poster:
         'https://image.tmdb.org/t/p/original/wzzLEUUrBT3Hr0FF9HrXxV6CsBF.jpg',
     },
@@ -194,6 +214,7 @@ export class AppComponent {
       year: 2024,
       genres: ['Adventure', 'Comedy', 'Sport'],
       rating: 8.5,
+      isRating: false,
       poster: 'https://upload.wikimedia.org/wikipedia/en/1/14/Haikyu_TV.jpg',
     },
     {
@@ -202,6 +223,7 @@ export class AppComponent {
       year: 2022,
       genres: ['Drama', 'Action'],
       rating: 8.4,
+      isRating: false,
       poster:
         'https://assets.gadgets360cdn.com/pricee/assets/product/202302/Tokyo-Revenger-S2_1675424097.jpg',
     },
@@ -211,6 +233,7 @@ export class AppComponent {
       year: 2012,
       genres: ['Comedy', 'Drama'],
       rating: 8.2,
+      isRating: false,
       poster:
         'https://m.media-amazon.com/images/I/817RgobSrHL._AC_UF1000,1000_QL80_.jpg',
     },
@@ -220,6 +243,7 @@ export class AppComponent {
       year: 2016,
       genres: ['Action', 'Adventure', 'Sci-Fi'],
       rating: 8.2,
+      isRating: false,
       poster:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn0ihM3Bn6rg7opUx3HA9dfaiB2gRPvNIwdA&s',
     },
@@ -229,11 +253,17 @@ export class AppComponent {
       year: 2019,
       genres: ['Adventure', 'Drama'],
       rating: 8.2,
+      isRating: false,
       poster:
         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxKkaFUACy15rrG01tY8C-3Gy4imGRVuZgd3wLQnNE6XO7bG9_mymlch_oZdFKvTAy2r3K',
     },
   ];
+
   change() {
     this.isDark = this.isDark ? false : true;
+  }
+  showHide(i:number) {
+    if (this.animes[i].isRating) this.animes[i].isRating = false;
+    else this.animes[i].isRating = true;
   }
 }

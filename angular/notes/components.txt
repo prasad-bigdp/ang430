@@ -1,0 +1,19 @@
+Components are the building blocks of User Interface. we divide the whole UI layout into reusable blocks of code called components.
+To generate New Component, we use "ng generate component component-name"
+Every component will have 4 files
+  html(template) -- used for view
+  css(style) -- used for styling/design
+  ts(component) -- used for logic/control
+  spec.ts(test) -- used for testing
+
+Every component will have a name in component file(ts) as "selector". it can be used as html Element
+
+one component can be inside anothe component called nested components
+
+
+
+
+
+
+
+
