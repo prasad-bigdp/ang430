@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './main.component.css'
 })
 export class MainComponent {
-
+  data: string = '';
+  data2:string=''
+  submit() {
+    this.data2=this.data
+  }
 }

@@ -1,6 +1,11 @@
+<div class="m-auto max-w-5xl flex justify-center items-center py-5">
+    <input type="text" class=" border border-black rounded-2xl text-2xl p-2" [(ngModel)]="data">
+    <button class=" bg-green-400 p-4 rounded-2xl" (click)="submit()">submit to child</button>
+</div>
+
 <div class=" h-10/12 py-20 max-w-5xl m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-    <app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
+    <app-card Title="shicnhan" url="https://m.media-amazon.com/images/I/61d97WtnVgL._AC_UF894,1000_QL80_.jpg" desc="loremk kuhf fkjh kjfh kjhkjhkdfjf kh kjdh fkh kfhkjliewiie ieiou elpo qwew " [data]="data2"></app-card>
+    <app-card Title="Doremon" url="https://rukminim2.flixcart.com/image/850/1000/kqqykcw0/sticker/s/h/i/funny-doremon-wall-stickers-size-pack-of-1-medium-89-as06-sahaj-original-imag4zux8vn9nhwg.jpeg?q=90&crop=false" desc="loremk kuhf fkjh kjfh kjhkjhkdfjf kh kjdh fkh kfhkjliewiie ieiou elpo qwew " [data]="data2"></app-card>
+    <app-card Title="Pwer rangers" url="https://static.wixstatic.com/media/79e1cb_da5d732cae2043299477a53a7f2feb0d~mv2.png/v1/fit/w_500,h_500,q_90/file.png" desc="loremk kuhf fkjh kjfh kjhkjhkdfjf kh kjdh fkh kfhkjliewiie ieiou elpo qwew " [data]="data2"> </app-card>
 </div>
 

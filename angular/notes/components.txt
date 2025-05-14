@@ -10,6 +10,20 @@ Every component will have a name in component file(ts) as "selector". it can be 
 
 one component can be inside anothe component called nested components
 
+ Communication between the componets:
+Communication between the components are three types:
+  i. parent component to child component
+  ii. child component to parent component
+  iii. communication between unrelated components
+
+  i. parent component to child component:
+    parent component can send data to child component using @Input()
+    parent component sends the data like attributes and child receives them using @Input()
+
+
+
+
+
 
 
 
