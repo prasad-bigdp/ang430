@@ -1,0 +1,10 @@
+<div style="border: 1px solid red; height: 500px;width: 500px;">
+    <h2>I'm parent, child count: {{c}}</h2>
+    <button (click)="fun()">click child incr</button>
+    <p>My child sent me :  {{childMsg}}</p>
+    <input type="text" placeholder="Enter something" [(ngModel)]="msg">
+    <app-card [message]="msg" (childMessage)="takeChildMsg($event)" #bujji>
+        Hi Dear
+    </app-card>
+    <h2>{{bujji.count}}</h2>
+</div>

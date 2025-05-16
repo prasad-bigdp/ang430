@@ -20,13 +20,38 @@ Communication between the components are three types:
     parent component can send data to child component using @Input()
     parent component sends the data like attributes and child receives them using @Input()
 
+//parent.component.html
+<app- child   name="prasad" />
+
+//child.component.ts
+@Input()  name:string=''
+
+//child.component.html
+<p>{{name}}</p>
 
 
+ ii. child component to parent component:
+     child component can send data to parent component using three ways
+      i. @viewChild() or @viewChildren():
+      These directives are used to access the child data from parent component
+      //parent.componet.ts
+@viewChild(Child) c:Child;
+fun(){
+this.c.incr();
+}
 
+//parent.component.html
+<app- child   name="prasad" />
+<p>{{c.count}}</p>
+<button (click)="fun()">+</button>
 
+//child.component.ts
+@Input()  name:string=''
+count=0;
+incr(){ this.count++;}
 
-
-
+//child.component.html
+<p>{{name}}</p>
 
 
 

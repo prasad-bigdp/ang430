@@ -1,0 +1,6 @@
+<p>Count: <span class=" text-4xl">{{c}}</span></p>
+<button (click)="pchange()">+</button>
+<div class=" m-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+   <app-product *ngFor="let f of data" [title]="f.title"
+   [image]="f.image" [description]="f.description" [category]="f.category" [price]="f.price"></app-product>
+</div>

@@ -13,3 +13,18 @@ Directives
    -- property Directives  (ngClass, ngStyle)
    -- custom Directives
 Pipes 
+Components
+   -- Nested Components
+   -- Parent to Child(@Input, content projection)
+   -- Child to Parent(@Output, @ViewChild, template referece variable)
+Services
+   -- httpClient
+   -- CRUD
+   -- httpInterceptor
+Routing
+Forms
+   -- template Driven Forms
+   -- Model Forms
+RxJs
+Advanced -- Signals, Hydration etc..,
+Real Time Project (Angular 19)

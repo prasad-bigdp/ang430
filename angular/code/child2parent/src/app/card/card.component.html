@@ -1,0 +1,7 @@
+<div style="height: 200px;width: 200px;padding: 50px;border: 1px solid green;">
+    <ng-content></ng-content>
+    <h2>I'm child</h2>
+    <p>Parent is sending {{message}}</p>
+    <input type="text" placeholder="Enter data" [(ngModel)]="data">
+    <button (click)="send()">send</button>
+</div>

@@ -1,0 +1,7 @@
+<div class=" p-5 border rounded-2xl shadow shadow-blue-400 flex flex-col justify-center items-center max-h-80">
+    <img [src]="image" [alt]="title" class=" h-40"/>
+    <h2>{{title}}</h2>
+    <!-- <p>{{description}}</p> -->
+    <p>Price: {{price | currency:"INR"}}</p>
+    <button class=" bg-green-300 text-white p-5 rounded-2xl" (click)="change()">Add to Cart</button>
+</div>
