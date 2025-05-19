@@ -1,0 +1,25 @@
+Services:Services in angular are used to share the common Data. it provides communication between two unrelated components.
+In angular, service is a class that encapsulates some functionalities that can used throught out application
+Mainly services are used for 
+   i. sharing the Data
+   ii. Encasuplating the complex logic
+   iii. requesting or handling the API's.
+
+To use services, we need to inject the service. 
+ creating a service :
+    ng generate service service-name
+    it generated two files service.ts and service.spec.ts(testing)
+    service.ts contains a class that can be injectable into any component.
+
+Dependency Injection: it is a design pattern that allows components to be loosly coupled so that it is easy to test, maintain and extend the system. it is a technique where one component receives another component that it need to be functioned instead of creating Dependency
+
+
+
+
+
+
+
+
+
+
+
