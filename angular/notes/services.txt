@@ -13,6 +13,33 @@ To use services, we need to inject the service.
 
 Dependency Injection: it is a design pattern that allows components to be loosly coupled so that it is easy to test, maintain and extend the system. it is a technique where one component receives another component that it need to be functioned instead of creating Dependency
 
+HttpClient:HttpClient is a service provided by angular , used for http requests such as GET,POST,PUT,DELETE, PATCH etc..,
+it offers simple API communication and its methods returns observables
+
+How to use HttpClient ?
+  step 1: import HttpClientModule in app.module.ts and mention in imports or 
+          import provideHttpClient in app.module.ts and call in providers
+  step 2: Inject the HttpClient in component or service
+  constructor(public obj-name:HttpClient)
+  Now this object can be used to call get, post, put,delete methods
+
+   To handle its response observables need to be subscribed.
+
+
+Observable: Observables are used to handle multiple asynchoronous data like data streams  . it allows you to observe the data changes over time and react to it
+Observable vs Promises
+Observables used for stream of asynchoronous functionalities but promise is used for single asynchoronous functionality
+Observables are usally returned by HttpClient methods and promises are returned by fetch
+Observable need to be subscribed and success or fail data will be passed
+Promise can be handle using then, catch or async await
+
+
+
+
+
+
+
+
 
 
 

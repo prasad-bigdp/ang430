@@ -1,0 +1,14 @@
+<h1 class=" text-5xl text-center text-white">Scary Town</h1>
+<div class=" bg-white mx-2 my-2 rounded-2xl flex flex-col  justify-between p-5" style="max-height: 60vh;width: 60vw;">
+  <p *ngIf="isLoading">loading.........</p>
+
+  <div *ngFor="let x of data" class=" overflow-y-scroll">
+   <p>{{x.q}}</p>
+   <p>{{x.a}}</p>
+  </div>
+  <div class=" flex gap-5" style="width: 100%;">
+     <input type="text" class=" border border-gray-500 p-2 text-2xl rounded-2xl w-10/12" placeholder="Ask me Anything" [(ngModel)]="que">
+     <button class=" bg-black p-5 rounded-2xl text-white text-2xl" 
+     (click)="getData()">search</button>
+  </div>
+</div>
