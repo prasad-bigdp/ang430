@@ -1,0 +1,5 @@
+Routing : Routing is used to navigate from one page to another or one component to another component.
+In angular , Routing can be implement using 3 steps:
+   step 1: Import the routing module
+   step 2: Define the Routes
+   step 3: assign route to navigation links
