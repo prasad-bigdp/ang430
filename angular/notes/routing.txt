@@ -3,3 +3,80 @@ In angular , Routing can be implement using 3 steps:
    step 1: Import the routing module
    step 2: Define the Routes
    step 3: assign route to navigation links
+
+In angular, we can import the routing Model in app.module.ts
+
+import { AppRoutingModule } from './app-routing.module';
+
+
+  imports: [BrowserModule, AppRoutingModule],
+
+Assign the routes:
+
+ { path: '', component: HomeComponentComponent },
+  {
+    path: 'home',
+    component: HomeComponentComponent,
+    children: [
+      { path: 'about', component: AboutPageComponent },
+      { path: 'projects', component: ProjectsPageComponent },
+    ],
+  },
+  { path: 'about', component: AboutPageComponent },
+  { path: 'projects', component: ProjectsPageComponent },
+  { path: 'projects/:id', component: ProjectComponent },
+  { path: 'contact', component: ContactPageComponent },
+  { path: '**', component: NotfoundComponent },
+
+
+
+  we can link the pages using anchor tag but instead of href, use routerLink
+
+
+Auth Guards : Auth guards are used to guard the route
+There are 4 auth guards are existed angular
+   1. canActivate ()
+   2. candeactivate()
+   3. canChildActivate()
+   4. canMatch()
+
+canActivate will get triggered to activating the route . canDeactivate will get triggered to deactivate the route
+canChildActivate will get triggered to activate the child route. canMatch will get triggered to check whether matching to the path or not
+
+Lazy Loading: It is used to load the routes or modules on demand rather than all at once. 
+Lazy Loading makes the inital load time faster, improves performance, and it provides better user experience
+ implementation of lazy loading in angular:
+    1. create feature/custom modules
+    2. configure routing for each module or component using loadChildern
+    3. use the loadChildern property to specify the component or module
+    loadChildren: () => import('./projects-page/projects-page.component')
+      .then(m => m.ProjectsPageComponent)
+
+   Router service provides way to navigate from one page to another page or route
+   constructor(private r:Router){}
+   gotoLink(){
+      this.r.navigate('./about)
+   }
+
+<button (click)="gotoLink()">click me</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
