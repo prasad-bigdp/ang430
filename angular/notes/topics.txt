@@ -1,27 +1,27 @@
 JS Basics
 Typescript
 Angular Intro
-Folder structure
+Folder structure  -- Hello world project
 Data binding(
     one way - string interpolation,
               property binding,
-              event binding
+              event binding 
     two way - ngModel
-)
+)   -- id generator, meme generator, movigenerator projects
 Directives
-   --structural Directives (ngIf,ngSwitch,ngFor)
-   -- property Directives  (ngClass, ngStyle)
+   --structural Directives (ngIf,ngSwitch,ngFor) -- modals , movieLibrary
+   -- property Directives  (ngClass, ngStyle)  -- dynamic changes to comic library
    -- custom Directives
-Pipes 
+Pipes   --default , custom pipes -- comic library currency
 Components
    -- Nested Components
-   -- Parent to Child(@Input, content projection)
-   -- Child to Parent(@Output, @ViewChild, template referece variable)
+   -- Parent to Child(@Input, content projection) -- movieLibrary with different movies
+   -- Child to Parent(@Output, @ViewChild, template referece variable) -- parent -child communication project
 Services
-   -- httpClient
-   -- CRUD
+   -- httpClient  -- raju rani messages, random joke generator, aichatbot
+   -- CRUD -- basic crud app
    -- httpInterceptor
-Routing
+Routing  -- basic routes, child routing, nested/dynamic routing , lazy loading, auth guards
 Forms
    -- template Driven Forms
    -- Model Forms

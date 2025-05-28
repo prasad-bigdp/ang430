@@ -1,0 +1,45 @@
+RXJS (Reactive Extension for Javascript):
+   Rxjs is a library used to handle multiple asynchronous functions using 
+   observables,subjects etc..,
+     -- > Mainly used in API requests
+     --> Asynchronous operations
+     --> Data transmission or distribution etc..,
+  RxJs comprises of three topics:
+    i. observables
+    ii. subjects
+    iii. operators
+
+    i. observables:it is a way to handle asynchronous data and events in a reactive way. Main benefits of observables are
+       Error handling,asynchronous data handling, decoupling
+       How observables work:
+         a. creating an observables
+         b. subscribing the observables
+         c. emitting the data
+
+    o = new Observable((s) => {
+    s.next(5)
+     setTimeout(() => s.next(6), 1000
+     );
+     s.next(7)
+     s.next(8);
+     setTimeout(() => s.complete(),5000);
+  });
+  
+  fun() {
+    this.o.subscribe((d)=>console.log(d))
+  }
+
+    ii. subjects:  Subjects are type of observables that can be used to emit values to multiple observers. They are useful in sharing the data between components that don't have any relation
+    basically subjects are three types:
+      a. subject
+      b. behaviour subject : it is same general subject but contains default values
+      c. replay subject : it is a type of subject that store multiple values and replay them to observers
+
+    iii. operators: These are default functions which are used to create or emot details of observable or subjects
+    eg: subscribe, of, foreach, map, filter etc..,
+
+
+
+
+
+

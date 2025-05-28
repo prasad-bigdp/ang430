@@ -1,0 +1,46 @@
+Forms: Angular can deal forms data in multiple ways.
+we generally take data from inputs using two way binding of ngModel but there are two types of forms to take whole form data. They are:
+i. template driven forms: These forms are built using template file and ngModel directive. it is suitable for simple forms
+
+ii. reactive forms: These forms are used to built using FormGroup and FormControl classes and are suitable for complex forms.
+
+
+Template Driven Forms:
+Template Driven Forms are completely created within template files(.html)
+"ngModel" directive is used to create formControl class object to identify value,errors,status of a input
+"ngForm" directive is used to create formGroup class object to identify all inputs value,errors,status etc..,
+eg: 
+    <form (submit)="formLogic(myForm)" #myForm="ngForm">
+       <input type="email" name="em" ngModel />
+       <input type="password" name="pwd" ngModel />
+       <button>submit</button>
+    </form>
+
+There are some default values created in formControl object such as
+value -- contains value of the input
+errors -- contains array of all errors for that input
+disabled -- will be true if button is disabled
+enabled -- will be true if button is enabled
+pristine -- will be true if input value is not changed
+dirty -- will be true if input value is changed
+touched -- will be true if input is touched once
+untouched -- will be true if input is not touched
+
+
+These field we can use for error handling in forms
+
+Reactive forms:
+   These are similar to Template Driven forms but inputs objects are created in typescript instead of ngModel
+
+   for whole form, we create instance of formGroup.
+   for single input we create instance of formControl
+
+Advantage of Reactive forms is it can create custom validators unlike TDF.
+
+
+
+
+
+
+
+

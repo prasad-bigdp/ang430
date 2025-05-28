@@ -1,0 +1,15 @@
+<!-- form-->
+ <h2 class=" text-2xl font-bold  m-5">Login form</h2>
+ <form (submit)="submitForm(em,pwd)" class=" shadow-2xl shadow-blue-800 rounded-2xl p-5 flex flex-col justify-center item-center gap-5 m-5 w-max" #myForm="ngForm">
+
+    <div>
+        <input type="email" placeholder="Enter email" class=" border border-black rounded-2xl text-2xl p-3 hover:outline-blue-200" ngModel name="em" required #em="ngModel">
+        <p *ngIf="em.touched && em.errors?.['required']" style="color: red;">Email is required</p> 
+    </div>
+    <div><input type="password" placeholder="Enter password" class=" border border-black rounded-2xl text-2xl p-3 hover:outline-blue-200" ngModel name="pwd" #pwd="ngModel" minlength="6" required >
+        <p *ngIf="pwd.errors?.['minlength']" style="color: red;">Minimum length is 6 characters</p>
+        <p *ngIf="pwd.touched && pwd.errors?.['required']" style="color: red;">Password is required</p>
+    </div>
+    
+    <button type="submit" class=" bg-black text-white text-3xl rounded-3xl text-center p-5 w-max">submit</button>
+ </form>
