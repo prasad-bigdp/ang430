@@ -4,15 +4,16 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { providePrimeNG } from 'primeng/config';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PrimengModule } from './primeng/primeng.module';
+import { PrimengModule } from './modules/primeng/primeng.module';
 import Aura from '@primeng/themes/aura';
-import { HomeComponent } from './home/home.component';
-import { MoviesComponent } from './movies/movies.component';
-import { MovieComponent } from './movie/movie.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { FormsModule } from '@angular/forms'
+import { HomeComponent } from './pages/home/home.component';
+import { MoviesComponent } from './pages/movies/movies.component';
+import { MovieComponent } from './pages/movie/movie.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { FormsModule } from '@angular/forms';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat'; // or AngularFireModule
 
@@ -40,6 +41,7 @@ import { AngularFireModule } from '@angular/fire/compat'; // or AngularFireModul
     }),
   ],
   providers: [
+    provideHttpClient(),
     AngularFireAuthModule,
     provideAnimationsAsync(),
     providePrimeNG({

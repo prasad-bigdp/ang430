@@ -1,0 +1,16 @@
+
+<div class=" max-w-5xl m-auto">
+    <h2 class=" text-3xl my-4 text-center">This {{time}} Top Trending Movies</h2>
+    <select [(ngModel)]="time"  (input)="getMovies($any($event).target.value)" class=" ">
+        <option value="day">day</option>
+        <option value="week">week</option>
+    </select>
+</div>
+<div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl m-auto">
+     <div *ngFor="let m of TMoviesWeek" class=" p-5 rounded-2xl shadow-2xl shadow-blue-300">
+        <a routerLink="/movie/{{m.id}}">
+            <img src="https://image.tmdb.org/t/p/original/{{m.backdrop_path}}" alt="" />
+        <h2 class=" font-bold text-2xl text-center">{{m.title}}</h2>
+        </a>
+     </div>
+</div>
