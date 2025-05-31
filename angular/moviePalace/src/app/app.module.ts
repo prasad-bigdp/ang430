@@ -15,7 +15,9 @@ import { FormsModule } from '@angular/forms';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AngularFireModule } from '@angular/fire/compat'; // or AngularFireModule
+import { AngularFireModule } from '@angular/fire/compat';
+import { ColorDirective } from './color.directive';
+import { HeaderComponent } from './header/header.component'; // or AngularFireModule
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { AngularFireModule } from '@angular/fire/compat'; // or AngularFireModul
     MovieComponent,
     LoginComponent,
     SignupComponent,
+    ColorDirective,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

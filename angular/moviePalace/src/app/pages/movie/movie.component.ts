@@ -15,6 +15,9 @@ export class MovieComponent {
   constructor(public ac: ActivatedRoute, public api:ApiService) {
     this.ac.params.subscribe((p:any)=>this.movieId=p.id)
   }
+  update() {
+    this.api.updateWishList()
+  }
   ngOnInit() {
     this.api.getMovieById(this.movieId).subscribe((res) => this.movieDetails = res)
     this.api.getVideosById(this.movieId).subscribe((res: any) => {

@@ -20,4 +20,7 @@ export class HomeComponent  implements OnInit{
   ngOnInit() {
     this.getMovies('day')
   }
+  update() {
+    this.api.updateWishList()
+  }
 }
